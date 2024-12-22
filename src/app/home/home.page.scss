@@ -1,0 +1,70 @@
+#container {
+  text-align: center;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+ion-item-sliding{
+  border-bottom: 1px solid rgba(0,0,0,0.13);
+}
+
+/*Estos estilos se aplican al componente ion-menu en una aplicación Ionic.*/
+ion-menu::part(backdrop) {  /*El selector ::part(backdrop) apunta a la parte del fondo del ion-menu, estableciendo su color de fondo a un magenta semi-transparente.*/
+  background-color: rgba(236, 13, 31, 0.5);
+}
+
+ion-menu::part(container) {
+  border-radius: 0 20px 20px 0; /*El selector ::part(container) apunta a la parte del contenedor del ion-menu, aplicando un radio de borde en el lado derecho y agregando una sombra de caja magenta para un efecto 3D sutil.*/
+  box-shadow: 4px 0px 16px rgba(243, 2, 2, 0.938);
+}
+
+.logout-container {
+  position: absolute;
+  bottom: 16px; // Ajusta según sea necesario
+  right: 16px; // Ajusta según sea necesario
+  width: calc(100% - 32px); // Para que ocupe el ancho completo menos los márgenes
+}
+
+.no-posts-message {
+  text-align: center;
+  margin-top: 50px;
+
+  h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #666;
+  }
+
+  p {
+    font-size: 1em;
+    color: #999;
+  }
+}
+
+ion-fab-button {
+  --background: #3880ff;
+  --background-activated: #3171e0;
+  --background-hover: #3171e0;
+}

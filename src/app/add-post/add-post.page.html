@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Agregar Post</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-item>
+    <ion-label position="floating">Título</ion-label>
+    <ion-input [(ngModel)]="newPost.title" required></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Contenido</ion-label>
+    <ion-textarea [(ngModel)]="newPost.content" rows="6" required></ion-textarea>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Detalle</ion-label>
+    <ion-input [(ngModel)]="newPost.detail"></ion-input>
+  </ion-item>
+
+  <ion-button expand="block" (click)="addPost()" class="ion-margin-top">
+    Agregar Post
+  </ion-button>
+</ion-content>

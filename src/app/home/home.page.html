@@ -1,0 +1,63 @@
+<ion-app>
+  <app-side-menu></app-side-menu>
+  <div class="ion-page" id="main-content">
+    <ion-header [translucent]="true">
+      <ion-toolbar class="custom-toolbar" color="custom-toolbar">
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>
+          <ion-img src="assets/inacap.png" alt="Logo" style="height: 30px; float: right;"></ion-img>
+        </ion-title>
+        
+      </ion-toolbar>
+
+
+      <ion-card>
+        <img alt="Silhouette of mountains" src="assets/23-04-19--estudiantes-de-intercambio1200x400.jpg" />
+        <ion-card-header>
+          <ion-card-title>Bienvenido al Foro Inacap</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+         Tu espacio de confianza para compartir tus ideas con tus compañeros
+        </ion-card-content>
+      </ion-card>
+
+
+
+    </ion-header>
+    <ion-content [fullscreen]="true" class="ion-padding">
+      <ion-list *ngIf="posts.length > 0">
+        <ion-card *ngFor="let post of posts">
+          <ion-card-header>
+            <ion-card-title>{{ post.title }}</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p>{{ post.content }}</p>
+            <p>{{ post.detail }}</p>
+          </ion-card-content>
+          <ion-button expand="block" (click)="goToPostDetails(post.id || '')">Ver post</ion-button>
+        </ion-card>
+      </ion-list>
+      <ion-item *ngIf="posts.length === 0" class="no-posts-message">
+        <ion-label>
+          <h2>No hay posts disponibles</h2>
+          <p>¡Sé el primero en crear un post!</p>
+        </ion-label>
+      </ion-item>
+    </ion-content>
+    
+
+    
+    <ion-footer>
+      <ion-toolbar>
+        <ion-item>
+          <ion-input  [(ngModel)]="newPostContent" placeholder="Escribe un nuevo post..."></ion-input>
+          <ion-button class="button" slot="end" (click)="addPost()">Publicar</ion-button>
+        </ion-item>
+      </ion-toolbar>
+    </ion-footer>
+  </div>
+</ion-app>
+

@@ -1,0 +1,7 @@
+{
+  "name": "Foro-Inacap22-ionic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

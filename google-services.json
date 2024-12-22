@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "420518051522",
+    "project_id": "foroestudiantil-60f86",
+    "storage_bucket": "foroestudiantil-60f86.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:420518051522:android:2b348c371092b6852e855b",
+        "android_client_info": {
+          "package_name": "com.inacap.proyectoinacap01"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAN8qDveIWWGAheStKEW-aHtEtkkTNUL8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

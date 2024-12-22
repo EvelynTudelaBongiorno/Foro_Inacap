@@ -1,0 +1,46 @@
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .logo-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            max-width: 150px;
+            margin-bottom: 20px;
+        }
+
+        ion-spinner {
+            color: rgb(0, 0, 0);
+        }
+    }
+}
+
+.splashscreen-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.logo-container {
+    text-align: center;
+}
+
+.logo-container img {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.logo-container ion-spinner {
+    color: rgb(0, 0, 0);
+}
+
+.splashscreen-logo {
+    width: 150px;
+    height: 150px;
+}

@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Configuración</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label>Notificaciones</ion-label>
+      <ion-toggle [(ngModel)]="settings.notifications" (ionChange)="saveSettings()"></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-label>Modo oscuro</ion-label>
+      <ion-toggle [(ngModel)]="settings.darkMode" (ionChange)="saveSettings()"></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-label>Idioma</ion-label>
+      <ion-select [(ngModel)]="settings.language" (ionChange)="saveSettings()">
+        <ion-select-option value="es">Español</ion-select-option>
+        <ion-select-option value="en">Inglés</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <!-- Agrega más configuraciones según sea necesario -->
+  </ion-list>
+</ion-content>
