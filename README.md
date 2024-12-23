@@ -18,5 +18,3 @@ de manera global (en todos los usuarios).
 
 Una vez esté todo instalado, se ejecuta:
 ionic serve --lab
-
-Necesita crear un usuario y éste quedará registrado.
