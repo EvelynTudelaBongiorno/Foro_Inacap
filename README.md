@@ -19,6 +19,4 @@ de manera global (en todos los usuarios).
 Una vez esté todo instalado, se ejecuta:
 ionic serve --lab
 
-El usuario y contraseña default es:
-admin@admin.cl
-123456
+Necesita crear un usuario y éste quedará registrado.
