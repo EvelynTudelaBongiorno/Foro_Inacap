@@ -1,6 +1,7 @@
 Este es un proyecto de Foro Estudiantil de INACAP para la asignatura de Aplicaciones Móviles.
 
 
+
 Requisitos Previos:
 Node.js
 Visual Studio Code
